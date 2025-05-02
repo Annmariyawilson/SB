@@ -1,0 +1,131 @@
+<div class="parallax-wrapper">
+
+  <!-- Hero Section -->
+  <section id="aboutUsSection" class="parallax-section hero-section" data-speed="0.4" aria-label="Hero Section" role="region">
+    <div class="parallax-bg" style="background-image: url('assets/black.jpg');"></div>
+    <div class="content-wrapper">
+      <div class="overlay">
+        <div class="hero-content">
+          <div class="hero-text animate-fadeInLeft">
+            <h1>Start<span>Bitz</span></h1>
+            <p class="tagline">Igniting Ideas. Building Futures.</p>
+            <p class="description">
+              Welcome to StartBitz — a digital powerhouse empowering the future of technology. We are passionate about transforming bold ideas into scalable, tech-driven solutions.
+              <br /><br />
+              Our expert team specializes in cutting-edge web platforms, mobile solutions, and custom enterprise tools that are as user-friendly as they are powerful.
+            </p>
+            <button class="cta-button animate-bounceIn">Learn More</button>
+          </div>
+          <div class="hero-image animate-fadeInRight">
+            <img src="assets/pexels-drew-williams-1285451-3568520.jpg" alt="Innovative Tech Solutions by StartBitz" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="servicesSection" class="parallax-section services-section" data-speed="0.35">
+    <div class="parallax-bg" style="background-image: url('assets/pexels-enginakyurt-24285680.jpg');"></div>
+    <div class="content-wrapper">
+      <div class="overlay">
+        <div class="content text-center">
+          <h1 class="animate-fadeInUp"><span>Startbitz</span> Services</h1>
+          <p class="animate-fadeInDown">Driving digital transformation through technology, creativity, and collaboration.</p>
+
+          <div class="innovation-grid">
+            <div class="innovation-card animate-slideInLeft">
+              <i class="fas fa-code"></i>
+              <h3>Custom Web Development</h3>
+              <p>From dynamic websites to enterprise portals — tailor-made for your business.</p>
+            </div>
+            <div class="innovation-card animate-slideInUp">
+              <i class="fas fa-mobile-alt"></i>
+              <h3>Mobile App Solutions</h3>
+              <p>Intuitive and cross-platform apps that engage and convert.</p>
+            </div>
+            <div class="innovation-card animate-slideInDown">
+              <i class="fas fa-cloud"></i>
+              <h3>Cloud & DevOps</h3>
+              <p>Scalable cloud setups and continuous integration pipelines for faster delivery.</p>
+            </div>
+            <div class="innovation-card animate-slideInRight">
+              <i class="fas fa-chart-line"></i>
+              <h3>Digital Strategy & SEO</h3>
+              <p>Optimize your online presence and grow with data-backed digital strategies.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Projects Section -->
+<section id="projectsSection" class="parallax-section projects-section" data-speed="0.3">
+  <div class="parallax-bg" style="background-image: url('assets/black.jpg');"></div>  
+  <div class="content-wrapper d-flex flex-column align-items-center justify-content-center text-white">
+    <div class="project-cards-wrapper">
+      <div class="project-card animate-bounceIn">
+        <div class="icon">
+          <i class="fas fa-university fa-3x mb-3"></i>
+        </div>
+        <h2>College Management System</h2>
+        <p class="short-desc">
+          A complete Angular-based solution managing students, courses, events, placements, and more.
+        </p>
+        <button class="btn view-btn" (click)="openModal()">View More Details</button>
+      </div>
+      <!-- Add more project cards here -->
+    </div>
+  </div>
+</section>
+
+
+<!-- Modal Backdrop -->
+<div class="modal-backdrop" *ngIf="showModal" (click)="closeModal()"></div>
+
+<!-- Modal Content -->
+<div class="modal-container" *ngIf="showModal">
+  <div class="modal-content">
+    <span class="close-btn" (click)="closeModal()">&times;</span>
+
+    <h2>College Management System</h2>
+    
+    <img src="assets/pexels-turgay-koca-405356598-15307542.jpg" alt="College Management System" class="modal-image" />
+    
+    <div class="modal-section">
+      <h3>Technologies Used:</h3>
+      <ul>
+        <li><strong>Frontend:</strong> Angular, SCSS, Bootstrap</li>
+        <li><strong>Backend:</strong> Node.js, Express.js</li>
+        <li><strong>Database:</strong> MongoDB</li>
+      </ul>
+    </div>
+
+    <div class="modal-section">
+      <h3>Admin Panel</h3>
+      <p>
+        The admin panel includes CRUD for students, placements, events, rank holders, and visionaries. Secure access and intuitive modals for form submissions.
+      </p>
+    </div>
+
+    <div class="modal-section">
+      <h3>Client Side</h3>
+      <p>
+        Students and visitors can explore courses, events, contact the college, and view latest updates through a modern UI with parallax and animations.
+      </p>
+    </div>
+
+    <div class="modal-section">
+      <h3>More Features</h3>
+      <ul>
+        <li>Fully responsive UI</li>
+        <li>Integrated contact form with enquiry tracking</li>
+        <li>Dynamic course filtering system</li>
+        <li>Admin dashboard with modals and real-time updates</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+</div>

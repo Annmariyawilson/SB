@@ -1,0 +1,22 @@
+<div class="top-bar">
+  <div class="header">
+    <!-- Hamburger Menu -->
+    <div class="hamburger" [class.active]="isMenuOpen" (click)="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <!-- Navigation Links -->
+    <div class="nav-links" [class.active]="isMenuOpen">
+      <a href="#heroSection" (click)="scrollToSection('heroSection')">Home</a>
+      <a href="#aboutUsSection" (click)="scrollToSection('aboutUsSection')">About Us</a>
+      <a href="#servicesSection" (click)="scrollToSection('servicesSection')">Services</a>
+      <a href="#projectsSection" (click)="scrollToSection('projectsSection')">Projects</a>
+      <a href="#contactFormSection" (click)="scrollToSection('contactFormSection')">Contact</a>
+    </div>
+  </div>
+
+  <!-- Flying Bird Image -->
+  <img src="assets/flying bird.gif" alt="Flying Bird" class="bird" />
+</div>
